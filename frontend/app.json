@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Spendly",
+    "slug": "spendly-habit-coach",
+    "version": "1.0.0",
+    "scheme": "myapp",
+    "android": {
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "splash": {
+      "image": "./constants/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-community/datetimepicker",
+      "expo-web-browser",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
