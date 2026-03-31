@@ -4,16 +4,28 @@
     "slug": "spendly-habit-coach",
     "version": "1.0.0",
     "scheme": "myapp",
-    "android": {
-      "softwareKeyboardLayoutMode": "resize"
-    },
-    "web": {
-      "bundler": "metro"
-    },
+    "orientation": "portrait",
     "splash": {
       "image": "./constants/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "bundleIdentifier": "com.shivam.spendly",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.shivam.spendly",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./constants/logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
     },
     "plugins": [
       "expo-router",
@@ -24,6 +36,9 @@
     "extra": {
       "router": {
         "origin": false
+      },
+      "eas": {
+        "projectId": "da351ee7-3e6d-41f7-8f58-baccec66a9ee"
       }
     }
   }
